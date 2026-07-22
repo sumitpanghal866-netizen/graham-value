@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>GrahamValue</title>
+<title>GrahamValue Pro</title>
 
 <link rel="stylesheet" href="style.css">
 
 <meta name="theme-color" content="#0F172A">
-
-<link rel="manifest" href="manifest.json">
 
 </head>
 
@@ -18,33 +18,64 @@
 
 <div class="container">
 
-<h1>📈 GrahamValue</h1>
+<div class="header">
 
-<p class="subtitle">
-Benjamin Graham Intrinsic Value Calculator
-</p>
+<h1>📈 GrahamValue Pro</h1>
+
+<p>Benjamin Graham Intrinsic Value Calculator</p>
+
+</div>
 
 <div class="card">
 
 <input
-type="text"
 id="stock"
-placeholder="Search Stock (Example: TCS)"
+type="text"
+placeholder="Enter Stock Symbol (AAPL, MSFT, TCS.NS)"
 >
 
 <button id="searchBtn">
-Search Stock
+Analyze Stock
 </button>
 
 </div>
 
-<div id="stockData"></div>
+<div class="card">
 
-<div id="result"></div>
+<h2>Company</h2>
+
+<p id="company">-</p>
+
+<h2>Current Price</h2>
+
+<p id="price">-</p>
+
+<h2>EPS</h2>
+
+<p id="eps">-</p>
+
+<h2>Book Value</h2>
+
+<p id="book">-</p>
+
+</div>
+
+<div class="card result">
+
+<h2>Intrinsic Value</h2>
+
+<h1 id="intrinsic">-</h1>
+
+<p id="mos"></p>
+
+<h2 id="rating"></h2>
+
+</div>
 
 </div>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
